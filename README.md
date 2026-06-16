@@ -4,9 +4,9 @@ A GNOME Shell extension that surfaces remaining usage limits for multiple AI
 coding assistants directly in the top panel, with per-provider brand icons and
 a per-provider detail menu. Designed for GNOME 50 on Ubuntu.
 
-<img width="462" height="627" alt="image" src="https://github.com/user-attachments/assets/f2262345-2d5d-4cc3-93ec-1b21b0ba092e" />
-<img width="813" height="851" alt="image" src="https://github.com/user-attachments/assets/bfbbf3ed-aca8-4f67-9b1c-db63ca8bb9e8" />
-<img width="1080" height="548" alt="image" src="https://github.com/user-attachments/assets/6d45cb39-97c7-4eb5-8d62-5cbba6c57e7a" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/4ad4e4ab-3d6c-4c62-b6aa-23aab2355a47" />
+<img width="500"  alt="image" src="https://github.com/user-attachments/assets/bfbbf3ed-aca8-4f67-9b1c-db63ca8bb9e8" />
+<img width="600"  alt="image" src="https://github.com/user-attachments/assets/6d45cb39-97c7-4eb5-8d62-5cbba6c57e7a" />
 
 
 Supported providers:
