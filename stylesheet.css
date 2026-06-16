@@ -1,0 +1,77 @@
+.ai-panel-label {
+    spacing: 4px;
+}
+
+.ai-usage-header {
+    spacing: 8px;
+}
+
+.ai-title {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.ai-button {
+    padding: 4px;
+    border-radius: 12px;
+}
+
+.ai-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ai-usage-label {
+    font-weight: bold;
+}
+
+.ai-usage-value {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.ai-status-safe {
+    color: #2ec27e;
+}
+
+.ai-status-moderate {
+    color: #ff7800;
+}
+
+.ai-status-critical {
+    color: #e01b24;
+}
+
+.ai-progress-bar {
+    height: 6px;
+    background-color: rgba(128, 128, 128, 0.35);
+    border-radius: 3px;
+    margin-top: 4px;
+    width: 180px;
+}
+
+.ai-progress-fill {
+    height: 6px;
+    border-radius: 3px;
+}
+
+.ai-progress-fill.safe {
+    background-color: #2ec27e;
+}
+
+.ai-progress-fill.moderate {
+    background-color: #ff7800;
+}
+
+.ai-progress-fill.critical {
+    background-color: #e01b24;
+}
+
+.ai-reset-time {
+    font-size: 0.85em;
+    margin-top: 2px;
+}
+
+.ai-error-banner {
+    color: #e01b24;
+    font-size: 0.9em;
+}

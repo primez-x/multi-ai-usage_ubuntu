@@ -1,0 +1,22 @@
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# GSettings compiled catalog — regenerate from the .xml with:
+#   glib-compile-schemas schemas/
+schemas/gschemas.compiled
+
+# Runtime state / caches (must never be committed; may carry provider data)
+state.json
+*.state.json
+*.cache.json
+.cache/
+
+# Editor / OS cruft
+*.swp
+*.swo
+*~
+.DS_Store
+.idea/
+.vscode/

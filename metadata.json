@@ -1,0 +1,9 @@
+{
+  "uuid": "ai-usage-tracker@local",
+  "name": "AI Usage Tracker",
+  "description": "Track Codex, Claude, Kimi, and Z.ai GLM usage limits from local CLI credentials and usage APIs",
+  "version": 1,
+  "shell-version": ["50"],
+  "settings-schema": "org.gnome.shell.extensions.ai-usage-tracker",
+  "gettext-domain": "ai-usage-tracker"
+}

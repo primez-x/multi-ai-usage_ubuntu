@@ -1,0 +1,33 @@
+[Unit]
+Description=AI Usage Tracker cache updater
+Documentation=man:systemd.service(5)
+After=network-online.target
+Wants=network-online.target
+
+# Portable user service. %h expands to the owning user's home directory.
+# Install:  cp ai-usage-tracker.service ~/.config/systemd/user/
+#           systemctl --user daemon-reload
+#           systemctl --user enable --now ai-usage-tracker.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 %h/.local/share/gnome-shell/extensions/ai-usage-tracker@local/bin/ai_usage_tracker_helper.py --loop
+Restart=on-failure
+RestartSec=10s
+WorkingDirectory=%h
+Environment=PYTHONUNBUFFERED=1
+UMask=0077
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+MemoryMax=256M
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+RestrictRealtime=true
+LockPersonality=true
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.ai-usage-tracker" path="/org/gnome/shell/extensions/ai-usage-tracker/">
+    <key name="refresh-interval" type="i">
+      <default>10</default>
+      <summary>Refresh interval in seconds</summary>
+      <description>How often to refresh provider usage data</description>
+    </key>
+    <key name="display-mode" type="s">
+      <default>'remaining'</default>
+      <summary>Panel display mode</summary>
+      <description>remaining, percentage, or compact</description>
+    </key>
+    <key name="color-mode" type="s">
+      <default>'multi'</default>
+      <summary>Color mode</summary>
+      <description>multi, single, or off</description>
+    </key>
+    <key name="single-color" type="s">
+      <default>'#00BFFF'</default>
+      <summary>Single color hex</summary>
+    </key>
+    <!--
+      Defaults intentionally OMIT newer providers (e.g. glm). The extension's
+      _migrateProviderSettings() detects a provider as "new" when it is absent
+      from both of these lists and then enables + orders it once. If a new
+      provider were pre-listed here, an existing user whose provider-order is
+      unset would inherit it via this default, the migration would see it as
+      already-known, and it would never get enabled. Introduce new providers
+      through migration, not through these defaults.
+    -->
+    <key name="enabled-providers" type="as">
+      <default>['codex', 'claude', 'kimi']</default>
+      <summary>Enabled usage providers</summary>
+    </key>
+    <key name="provider-order" type="as">
+      <default>['codex', 'claude', 'kimi']</default>
+      <summary>Panel provider order</summary>
+    </key>
+  </schema>
+</schemalist>
