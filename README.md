@@ -4,9 +4,21 @@ A GNOME Shell extension that surfaces remaining usage limits for multiple AI
 coding assistants directly in the top panel, with per-provider brand icons and
 a per-provider detail menu. Designed for GNOME 50 on Ubuntu.
 
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/4ad4e4ab-3d6c-4c62-b6aa-23aab2355a47" />
-<img width="500"  alt="image" src="https://github.com/user-attachments/assets/bfbbf3ed-aca8-4f67-9b1c-db63ca8bb9e8" />
-<img width="600"  alt="image" src="https://github.com/user-attachments/assets/6d45cb39-97c7-4eb5-8d62-5cbba6c57e7a" />
+<img width="437" height="40" style="border-radius: 10px;" alt="image" src="https://github.com/user-attachments/assets/6bb0af5a-e16e-4740-a392-6712b62dd33c" />
+
+<br>
+
+<img height="300" style="border-radius: 10px;" alt="glm lite" src="https://github.com/user-attachments/assets/06e8875a-1c4f-4331-8325-a5554df783dc" />
+<img height="300" style="border-radius: 10px;" alt="claude lite" src="https://github.com/user-attachments/assets/c3641f80-f56a-4602-86f8-00a542bddbde" />
+<img height="300" style="border-radius: 10px;" alt="codex lite" src="https://github.com/user-attachments/assets/b581549f-e515-4252-9f8e-2ef5fd12c282" />
+<img height="300" style="border-radius: 10px;" alt="image" src="https://github.com/user-attachments/assets/5b90956b-5463-4e34-b77e-9b305c3ad797" />
+<img height="300" style="border-radius: 10px;" alt="claude dark" src="https://github.com/user-attachments/assets/00741ccd-37ba-4d77-b7df-fcc8be64764f" />
+<img height="300" style="border-radius: 10px;" alt="codex dark" src="https://github.com/user-attachments/assets/a005a4fb-b774-4ce6-876e-f382c11391cc" />
+
+<br>
+
+<img height="325" style="border-radius: 10px;" alt="image" src="https://github.com/user-attachments/assets/6d45cb39-97c7-4eb5-8d62-5cbba6c57e7a" />
+<img height="325" style="border-radius: 10px;" alt="image" src="https://github.com/user-attachments/assets/bfbbf3ed-aca8-4f67-9b1c-db63ca8bb9e8" />
 
 
 Supported providers:
