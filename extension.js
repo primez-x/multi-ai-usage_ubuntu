@@ -31,6 +31,7 @@ export default class AIUsageExtension extends Extension {
         this._settingsSignals = [];
         this._settingsSignals.push(this.settings.connectSignal('refresh-interval', () => this._restartTimer()));
         this._settingsSignals.push(this.settings.connectSignal('display-mode', () => this._updateIndicators()));
+        this._settingsSignals.push(this.settings.connectSignal('reset-display-mode', () => this._rebuildOpenMenus()));
         this._settingsSignals.push(this.settings.connectSignal('color-mode', () => this._updateIndicators()));
         this._settingsSignals.push(this.settings.connectSignal('single-color', () => this._updateIndicators()));
         this._settingsSignals.push(this.settings.connectSignal('enabled-providers', () => {

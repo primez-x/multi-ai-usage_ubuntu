@@ -70,6 +70,18 @@ export default class AIUsagePreferences extends ExtensionPreferences {
         displayRow.selected = Math.max(0, modeMap.indexOf(currentMode));
         group.add(displayRow);
 
+        const resetDisplayRow = new Adw.ComboRow({
+            title: 'Reset Display',
+            model: new Gtk.StringList({ strings: ['Countdown', 'Expiration time'] })
+        });
+        const resetModeMap = ['countdown', 'time'];
+        resetDisplayRow.connect('notify::selected', () => {
+            settings.set_string('reset-display-mode', resetModeMap[resetDisplayRow.selected]);
+        });
+        const currentResetMode = settings.get_string('reset-display-mode');
+        resetDisplayRow.selected = Math.max(0, resetModeMap.indexOf(currentResetMode));
+        group.add(resetDisplayRow);
+
         const colorRow = new Adw.ComboRow({
             title: 'Color Mode',
             model: new Gtk.StringList({ strings: ['Multi-color', 'Single color', 'Off'] })

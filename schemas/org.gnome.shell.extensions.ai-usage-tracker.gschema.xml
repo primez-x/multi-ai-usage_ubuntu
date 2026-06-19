@@ -11,6 +11,11 @@
       <summary>Panel display mode</summary>
       <description>remaining, percentage, or compact</description>
     </key>
+    <key name="reset-display-mode" type="s">
+      <default>'countdown'</default>
+      <summary>Reset display mode</summary>
+      <description>countdown or time</description>
+    </key>
     <key name="color-mode" type="s">
       <default>'multi'</default>
       <summary>Color mode</summary>

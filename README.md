@@ -85,8 +85,14 @@ Open the extension preferences to set the refresh interval, panel display mode
 and in what order. New providers added by future versions are auto-enabled once;
 providers you have deliberately disabled stay disabled.
 
+## Change Log
+
+- 2026-06-19: Added a reset display preference for countdown vs expiration
+  time, and made countdown reset details show both hours and minutes.
+
 ## Tests
 
 ```sh
-python3 -m unittest tests.test_helper
+python3 -m unittest tests/test_helper.py
+gjs -m tests/test_time.js
 ```
